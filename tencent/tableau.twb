@@ -1,0 +1,1085 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.19.0123.2221                               -->
+<workbook original-version='18.1' source-build='2018.2.6 (20182.19.0123.2221)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource inline='true' name='Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='hyper_0'>
+            <connection access_mode='readwrite' author-locale='en_US' class='hyper' dbname='C:/Users/paul-admin/Documents/My Tableau Prep Repository/Datasources/Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621.hyper' default-settings='yes' output-to-hyper-file='yes' prep-protocol-role=':prep-protocol-writer' schema='Extract' sslmode='' tablename='Extract' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper_0' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>releaseTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[releaseTime]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>releaseTime</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>apkPublishTime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[apkPublishTime]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>apkPublishTime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>apkUrl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[apkUrl]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>apkUrl</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appAverageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[appAverageRating]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appAverageRating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>206</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appDownCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appDownCount]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appDownCount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1124</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appId</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appName</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appRating1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>62</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating2]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appRating2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>30</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating3]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appRating3</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>35</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating4]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appRating4</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>38</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating5]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appRating5</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>166</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRatingCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRatingCount]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appRatingCount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>184</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appTags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appTags]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>appTags</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authorId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[authorId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>authorId</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14086</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[authorName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>authorName</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>9634</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>averageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[averageRating]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>averageRating</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>206</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[categoryId]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>categoryId</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>30</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categoryName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>categoryName</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>30</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editorIntro</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editorIntro]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>editorIntro</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>484</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fileSize</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fileSize]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>fileSize</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flag]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>flag</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iconUrl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iconUrl]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>iconUrl</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newFeature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[newFeature]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>newFeature</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>507</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numImages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numImages]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>numImages</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numSnapshot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numSnapshot]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>numSnapshot</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pkgName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pkgName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>pkgName</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>76838</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>versionCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[versionCode]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>versionCode</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>292</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>versionName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[versionName]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>versionName</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>424</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating1:qk]&quot;' value='1' />
+          <alias key='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating2:qk]&quot;' value='2' />
+          <alias key='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating3:qk]&quot;' value='3' />
+          <alias key='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating4:qk]&quot;' value='4' />
+          <alias key='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating5:qk]&quot;' value='5' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[appRating1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[appRating2]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[appRating3]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[appRating4]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[appRating5]' role='measure' type='quantitative' />
+      <column datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[authorId]' role='dimension' type='nominal' />
+      <column-instance column='[appRating1]' derivation='Sum' name='[sum:appRating1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[appRating2]' derivation='Sum' name='[sum:appRating2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[appRating3]' derivation='Sum' name='[sum:appRating3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[appRating4]' derivation='Sum' name='[sum:appRating4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[appRating5]' derivation='Sum' name='[sum:appRating5:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.45925' measure-ordering='alphabetic' measure-percentage='0.54075' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='tencent_data' inline='true' name='federated.1jlz6ud0dl5agk10ad6bu07c3riq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tencent_data' name='textscan.10vo4g41o2na1x18yql1y1ef5ud2'>
+            <connection class='textscan' directory='C:/Users/paul-admin/Google Drive/K12/teradata competition class/app data/app-store-datasets/tencent' filename='tencent_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10vo4g41o2na1x18yql1y1ef5ud2' name='tencent_data.csv' table='[tencent_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='releaseTime' ordinal='0' />
+            <column datatype='integer' name='apkPublishTime' ordinal='1' />
+            <column datatype='string' name='apkUrl' ordinal='2' />
+            <column datatype='real' name='appAverageRating' ordinal='3' />
+            <column datatype='integer' name='appDownCount' ordinal='4' />
+            <column datatype='integer' name='appId' ordinal='5' />
+            <column datatype='string' name='appName' ordinal='6' />
+            <column datatype='integer' name='appRating1' ordinal='7' />
+            <column datatype='integer' name='appRating2' ordinal='8' />
+            <column datatype='integer' name='appRating3' ordinal='9' />
+            <column datatype='integer' name='appRating4' ordinal='10' />
+            <column datatype='integer' name='appRating5' ordinal='11' />
+            <column datatype='integer' name='appRatingCount' ordinal='12' />
+            <column datatype='string' name='appTags' ordinal='13' />
+            <column datatype='integer' name='authorId' ordinal='14' />
+            <column datatype='string' name='authorName' ordinal='15' />
+            <column datatype='real' name='averageRating' ordinal='16' />
+            <column datatype='integer' name='categoryId' ordinal='17' />
+            <column datatype='string' name='categoryName' ordinal='18' />
+            <column datatype='string' name='description' ordinal='19' />
+            <column datatype='string' name='editorIntro' ordinal='20' />
+            <column datatype='integer' name='fileSize' ordinal='21' />
+            <column datatype='integer' name='flag' ordinal='22' />
+            <column datatype='string' name='iconUrl' ordinal='23' />
+            <column datatype='string' name='newFeature' ordinal='24' />
+            <column datatype='integer' name='numImages' ordinal='25' />
+            <column datatype='integer' name='numSnapshot' ordinal='26' />
+            <column datatype='string' name='pkgName' ordinal='27' />
+            <column datatype='integer' name='versionCode' ordinal='28' />
+            <column datatype='string' name='versionName' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>releaseTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[releaseTime]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>releaseTime</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>apkPublishTime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[apkPublishTime]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>apkPublishTime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>apkUrl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[apkUrl]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>apkUrl</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appAverageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[appAverageRating]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appAverageRating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appDownCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appDownCount]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appDownCount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appId]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appId</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appName]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appName</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating1]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appRating1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating2]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appRating2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating3]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appRating3</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating4]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appRating4</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRating5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRating5]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appRating5</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appRatingCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appRatingCount]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appRatingCount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appTags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appTags]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>appTags</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authorId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[authorId]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>authorId</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[authorName]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>authorName</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>averageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[averageRating]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>averageRating</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[categoryId]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>categoryId</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categoryName]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>categoryName</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editorIntro</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editorIntro]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>editorIntro</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fileSize</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fileSize]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>fileSize</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flag]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>flag</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iconUrl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iconUrl]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>iconUrl</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newFeature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[newFeature]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>newFeature</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numImages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numImages]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>numImages</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numSnapshot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numSnapshot]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>numSnapshot</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pkgName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pkgName]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>pkgName</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>versionCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[versionCode]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>versionCode</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>versionName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[versionName]</local-name>
+            <parent-name>[tencent_data.csv]</parent-name>
+            <remote-alias>versionName</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Apk Publish Time' datatype='integer' name='[apkPublishTime]' role='measure' type='quantitative' />
+      <column caption='Apk Url' datatype='string' name='[apkUrl]' role='dimension' type='nominal' />
+      <column caption='App Average Rating' datatype='real' name='[appAverageRating]' role='measure' type='quantitative' />
+      <column caption='App Down Count' datatype='integer' name='[appDownCount]' role='measure' type='quantitative' />
+      <column caption='App Id' datatype='integer' name='[appId]' role='dimension' type='ordinal' />
+      <column caption='App Name' datatype='string' name='[appName]' role='dimension' type='nominal' />
+      <column caption='App Rating Count' datatype='integer' name='[appRatingCount]' role='measure' type='quantitative' />
+      <column caption='App Tags' datatype='string' name='[appTags]' role='dimension' type='nominal' />
+      <column caption='Author Id' datatype='integer' name='[authorId]' role='dimension' type='ordinal' />
+      <column caption='Author Name' datatype='string' name='[authorName]' role='dimension' type='nominal' />
+      <column caption='Average Rating' datatype='real' name='[averageRating]' role='measure' type='quantitative' />
+      <column caption='Category Id' datatype='integer' name='[categoryId]' role='dimension' type='ordinal' />
+      <column caption='Category Name' datatype='string' name='[categoryName]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Editor Intro' datatype='string' name='[editorIntro]' role='dimension' type='nominal' />
+      <column caption='File Size' datatype='integer' name='[fileSize]' role='measure' type='quantitative' />
+      <column caption='Flag' datatype='integer' name='[flag]' role='measure' type='quantitative' />
+      <column caption='Icon Url' datatype='string' name='[iconUrl]' role='dimension' type='nominal' />
+      <column caption='New Feature' datatype='string' name='[newFeature]' role='dimension' type='nominal' />
+      <column caption='Num Images' datatype='integer' name='[numImages]' role='measure' type='quantitative' />
+      <column caption='Num Snapshot' datatype='integer' name='[numSnapshot]' role='measure' type='quantitative' />
+      <column caption='Pkg Name' datatype='string' name='[pkgName]' role='dimension' type='nominal' />
+      <column caption='Release Time' datatype='datetime' name='[releaseTime]' role='dimension' type='ordinal' />
+      <column caption='Version Code' datatype='integer' name='[versionCode]' role='dimension' type='ordinal' />
+      <column caption='Version Name' datatype='string' name='[versionName]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.513583' measure-ordering='alphabetic' measure-percentage='0.486417' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Star Comparisons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621' />
+          </datasources>
+          <datasource-dependencies datasource='Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621'>
+            <column datatype='integer' name='[appRating1]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[appRating2]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[appRating3]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[appRating4]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[appRating5]' role='measure' type='quantitative' />
+            <column-instance column='[appRating1]' derivation='Sum' name='[sum:appRating1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[appRating2]' derivation='Sum' name='[sum:appRating2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[appRating3]' derivation='Sum' name='[sum:appRating3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[appRating4]' derivation='Sum' name='[sum:appRating4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[appRating5]' derivation='Sum' name='[sum:appRating5:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating3:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[sum:appRating5:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[:Measure Names]</rows>
+        <cols>[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[Multiple Values]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[none:appName:nk]</field>
+            <field>[Flow1-node-Clean 1-979dfdd20986415e9ca5cbeb98024621].[none:categoryName:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='159' name='Sheet 1' width='192'>
+      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
+      gET7D2fPvm51w9UYAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
