@@ -1,0 +1,1625 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0417.1429                               -->
+<workbook source-build='2019.1.3 (20191.19.0417.1429)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='join' inline='true' name='federated.0keuo3w12lqb8n1418c7x0teucec' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='join' name='textscan.0xmmmgg0n5g1zb1gk8t6d0myq7zu'>
+            <connection class='textscan' directory='C:/Users/paul-admin/Google Drive/K12/teradata competition class/appdata/tableau' filename='join.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0xmmmgg0n5g1zb1gk8t6d0myq7zu' name='join.csv' table='[join#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='GfileSize' ordinal='0' />
+            <column datatype='string' name='GappName' ordinal='1' />
+            <column datatype='string' name='GpkgName' ordinal='2' />
+            <column datatype='string' name='GauthorName' ordinal='3' />
+            <column datatype='string' name='GcategoryName' ordinal='4' />
+            <column datatype='string' name='Gcontent_ratings' ordinal='5' />
+            <column datatype='boolean' name='Gis_editor_choice' ordinal='6' />
+            <column datatype='real' name='price' ordinal='7' />
+            <column datatype='string' name='Ginapp_details' ordinal='8' />
+            <column datatype='boolean' name='Ghas_video' ordinal='9' />
+            <column datatype='integer' name='GnumImages' ordinal='10' />
+            <column datatype='real' name='GappAverageRating' ordinal='11' />
+            <column datatype='integer' name='GappRating5' ordinal='12' />
+            <column datatype='integer' name='GappRating4' ordinal='13' />
+            <column datatype='integer' name='GappRating3' ordinal='14' />
+            <column datatype='integer' name='GappRating2' ordinal='15' />
+            <column datatype='integer' name='GappRating1' ordinal='16' />
+            <column datatype='integer' name='GappRatingCount' ordinal='17' />
+            <column datatype='date' name='GreleaseTime' ordinal='18' />
+            <column datatype='integer' name='GappDownCount' ordinal='19' />
+            <column datatype='string' name='GversionCode' ordinal='20' />
+            <column datatype='string' name='Gandroid_version' ordinal='21' />
+            <column datatype='string' name='Ginteractive_elements' ordinal='22' />
+            <column datatype='string' name='Gin_app_products' ordinal='23' />
+            <column datatype='datetime' name='TreleaseTime' ordinal='24' />
+            <column datatype='integer' name='TapkPublishTime' ordinal='25' />
+            <column datatype='string' name='TapkUrl' ordinal='26' />
+            <column datatype='real' name='TappAverageRating' ordinal='27' />
+            <column datatype='integer' name='TappDownCount' ordinal='28' />
+            <column datatype='integer' name='TappId' ordinal='29' />
+            <column datatype='string' name='TappName' ordinal='30' />
+            <column datatype='integer' name='TappRating1' ordinal='31' />
+            <column datatype='integer' name='TappRating2' ordinal='32' />
+            <column datatype='integer' name='TappRating3' ordinal='33' />
+            <column datatype='integer' name='TappRating4' ordinal='34' />
+            <column datatype='integer' name='TappRating5' ordinal='35' />
+            <column datatype='integer' name='TappRatingCount' ordinal='36' />
+            <column datatype='string' name='TappTags' ordinal='37' />
+            <column datatype='integer' name='TauthorId' ordinal='38' />
+            <column datatype='string' name='TauthorName' ordinal='39' />
+            <column datatype='real' name='TaverageRating' ordinal='40' />
+            <column datatype='integer' name='TcategoryId' ordinal='41' />
+            <column datatype='string' name='TcategoryName' ordinal='42' />
+            <column datatype='string' name='Tdescription' ordinal='43' />
+            <column datatype='string' name='TeditorIntro' ordinal='44' />
+            <column datatype='integer' name='TfileSize' ordinal='45' />
+            <column datatype='integer' name='Tflag' ordinal='46' />
+            <column datatype='string' name='TiconUrl' ordinal='47' />
+            <column datatype='string' name='TnewFeature' ordinal='48' />
+            <column datatype='integer' name='TnumImages' ordinal='49' />
+            <column datatype='integer' name='TnumSnapshot' ordinal='50' />
+            <column datatype='string' name='TpkgName' ordinal='51' />
+            <column datatype='integer' name='TversionCode' ordinal='52' />
+            <column datatype='string' name='TversionName' ordinal='53' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GfileSize</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GfileSize]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GfileSize</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GappName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GpkgName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GpkgName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GpkgName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GauthorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GauthorName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GauthorName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GcategoryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GcategoryName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GcategoryName</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gcontent_ratings</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gcontent_ratings]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Gcontent_ratings</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gis_editor_choice</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Gis_editor_choice]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Gis_editor_choice</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ginapp_details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ginapp_details]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Ginapp_details</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ghas_video</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Ghas_video]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Ghas_video</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GnumImages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GnumImages]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GnumImages</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappAverageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GappAverageRating]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappAverageRating</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappRating5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappRating5]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappRating5</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappRating4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappRating4]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappRating4</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappRating3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappRating3]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappRating3</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappRating2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappRating2]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappRating2</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappRating1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappRating1]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappRating1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappRatingCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappRatingCount]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappRatingCount</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GreleaseTime</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[GreleaseTime]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GreleaseTime</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GappDownCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GappDownCount]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GappDownCount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GversionCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GversionCode]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>GversionCode</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gandroid_version</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gandroid_version]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Gandroid_version</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ginteractive_elements</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ginteractive_elements]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Ginteractive_elements</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gin_app_products</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gin_app_products]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Gin_app_products</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TreleaseTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[TreleaseTime]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TreleaseTime</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TapkPublishTime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TapkPublishTime]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TapkPublishTime</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TapkUrl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TapkUrl]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TapkUrl</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappAverageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TappAverageRating]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappAverageRating</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappDownCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappDownCount]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappDownCount</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappId]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappId</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TappName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappName</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappRating1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappRating1]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappRating1</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappRating2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappRating2]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappRating2</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappRating3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappRating3]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappRating3</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappRating4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappRating4]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappRating4</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappRating5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappRating5]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappRating5</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappRatingCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TappRatingCount]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappRatingCount</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TappTags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TappTags]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TappTags</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TauthorId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TauthorId]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TauthorId</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TauthorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TauthorName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TauthorName</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TaverageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TaverageRating]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TaverageRating</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TcategoryId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TcategoryId]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TcategoryId</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TcategoryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TcategoryName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TcategoryName</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tdescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tdescription]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Tdescription</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeditorIntro</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TeditorIntro]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TeditorIntro</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TfileSize</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TfileSize]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TfileSize</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tflag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tflag]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>Tflag</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TiconUrl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TiconUrl]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TiconUrl</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TnewFeature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TnewFeature]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TnewFeature</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TnumImages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TnumImages]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TnumImages</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TnumSnapshot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TnumSnapshot]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TnumSnapshot</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TpkgName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TpkgName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TpkgName</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TversionCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TversionCode]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TversionCode</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TversionName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TversionName]</local-name>
+            <parent-name>[join.csv]</parent-name>
+            <remote-alias>TversionName</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gandroid version' datatype='string' name='[Gandroid_version]' role='dimension' type='nominal' />
+      <column caption='Gapp Average Rating' datatype='real' name='[GappAverageRating]' role='measure' type='quantitative' />
+      <column caption='Gapp Down Count' datatype='integer' name='[GappDownCount]' role='measure' type='quantitative' />
+      <column caption='Gapp Name' datatype='string' name='[GappName]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[GappRating1 (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[GappRating1]' peg='0' size='37065' />
+      </column>
+      <column datatype='integer' name='[GappRating1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[GappRating2]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[GappRating3]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[GappRating4]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[GappRating5]' role='measure' type='quantitative' />
+      <column caption='Gapp Rating Count' datatype='integer' name='[GappRatingCount]' role='measure' type='quantitative' />
+      <column caption='Gauthor Name' datatype='string' name='[GauthorName]' role='dimension' type='nominal' />
+      <column caption='Gcategory Name' datatype='string' name='[GcategoryName]' role='dimension' type='nominal' />
+      <column caption='Gcontent ratings' datatype='string' name='[Gcontent_ratings]' role='dimension' type='nominal' />
+      <column caption='Gfile Size' datatype='integer' name='[GfileSize]' role='measure' type='quantitative' />
+      <column caption='Ghas video' datatype='boolean' name='[Ghas_video]' role='dimension' type='nominal' />
+      <column caption='Gin app products' datatype='string' name='[Gin_app_products]' role='dimension' type='nominal' />
+      <column caption='Ginapp details' datatype='string' name='[Ginapp_details]' role='dimension' type='nominal' />
+      <column caption='Ginteractive elements' datatype='string' name='[Ginteractive_elements]' role='dimension' type='nominal' />
+      <column caption='Gis editor choice' datatype='boolean' name='[Gis_editor_choice]' role='dimension' type='nominal' />
+      <column caption='Gnum Images' datatype='integer' name='[GnumImages]' role='measure' type='quantitative' />
+      <column caption='Gpkg Name' datatype='string' name='[GpkgName]' role='dimension' type='nominal' />
+      <column caption='Grelease Time' datatype='date' name='[GreleaseTime]' role='dimension' type='ordinal' />
+      <column caption='Gversion Code' datatype='string' name='[GversionCode]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Tapk Publish Time' datatype='integer' name='[TapkPublishTime]' role='measure' type='quantitative' />
+      <column caption='Tapk Url' datatype='string' name='[TapkUrl]' role='dimension' type='nominal' />
+      <column caption='Tapp Average Rating' datatype='real' name='[TappAverageRating]' role='measure' type='quantitative' />
+      <column caption='Tapp Down Count' datatype='integer' name='[TappDownCount]' role='measure' type='quantitative' />
+      <column caption='Tapp Id' datatype='integer' name='[TappId]' role='dimension' type='ordinal' />
+      <column caption='Tapp Name' datatype='string' name='[TappName]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[TappRating1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[TappRating2]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[TappRating3]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[TappRating4]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[TappRating5]' role='measure' type='quantitative' />
+      <column caption='Tapp Rating Count' datatype='integer' name='[TappRatingCount]' role='measure' type='quantitative' />
+      <column caption='Tapp Tags' datatype='string' name='[TappTags]' role='dimension' type='nominal' />
+      <column caption='Tauthor Id' datatype='integer' name='[TauthorId]' role='dimension' type='ordinal' />
+      <column caption='Tauthor Name' datatype='string' name='[TauthorName]' role='dimension' type='nominal' />
+      <column caption='Taverage Rating' datatype='real' name='[TaverageRating]' role='measure' type='quantitative' />
+      <column caption='Tcategory Id' datatype='integer' name='[TcategoryId]' role='dimension' type='ordinal' />
+      <column caption='Tcategory Name' datatype='string' name='[TcategoryName]' role='dimension' type='nominal' />
+      <column caption='Teditor Intro' datatype='string' name='[TeditorIntro]' role='dimension' type='nominal' />
+      <column caption='Tfile Size' datatype='integer' name='[TfileSize]' role='measure' type='quantitative' />
+      <column caption='Ticon Url' datatype='string' name='[TiconUrl]' role='dimension' type='nominal' />
+      <column caption='Tnew Feature' datatype='string' name='[TnewFeature]' role='dimension' type='nominal' />
+      <column caption='Tnum Images' datatype='integer' name='[TnumImages]' role='measure' type='quantitative' />
+      <column caption='Tnum Snapshot' datatype='integer' name='[TnumSnapshot]' role='measure' type='quantitative' />
+      <column caption='Tpkg Name' datatype='string' name='[TpkgName]' role='dimension' type='nominal' />
+      <column caption='Trelease Time' datatype='datetime' name='[TreleaseTime]' role='dimension' type='ordinal' />
+      <column caption='Tversion Code' datatype='integer' name='[TversionCode]' role='dimension' type='ordinal' />
+      <column caption='Tversion Name' datatype='string' name='[TversionName]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column-instance column='[GappRating1]' derivation='Avg' name='[avg:GappRating1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappRating2]' derivation='Avg' name='[avg:GappRating2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappRating3]' derivation='Avg' name='[avg:GappRating3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappRating4]' derivation='Avg' name='[avg:GappRating4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappRating5]' derivation='Avg' name='[avg:GappRating5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating1]' derivation='Avg' name='[avg:TappRating1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating2]' derivation='Avg' name='[avg:TappRating2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating3]' derivation='Avg' name='[avg:TappRating3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating4]' derivation='Avg' name='[avg:TappRating4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating5]' derivation='Avg' name='[avg:TappRating5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappRating1]' derivation='Count' name='[cnt:GappRating1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappRating2]' derivation='Count' name='[cnt:GappRating2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GappAverageRating]' derivation='None' name='[none:GappAverageRating:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[GappDownCount]' derivation='None' name='[none:GappDownCount:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[TappDownCount]' derivation='None' name='[none:TappDownCount:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[TaverageRating]' derivation='None' name='[none:TaverageRating:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='RowInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating1]' derivation='Avg' name='[pcto:avg:GappRating1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='RowInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating2]' derivation='Avg' name='[pcto:avg:GappRating2:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='RowInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating3]' derivation='Avg' name='[pcto:avg:GappRating3:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='RowInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating4]' derivation='Avg' name='[pcto:avg:GappRating4:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='RowInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GappRating5]' derivation='Avg' name='[pcto:avg:GappRating5:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating1]' derivation='Avg' name='[pcto:avg:TappRating1:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating1]' derivation='Avg' name='[pcto:avg:TappRating1:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating1]' derivation='Avg' name='[pcto:avg:TappRating1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating2]' derivation='Avg' name='[pcto:avg:TappRating2:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating2]' derivation='Avg' name='[pcto:avg:TappRating2:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating2]' derivation='Avg' name='[pcto:avg:TappRating2:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating3]' derivation='Avg' name='[pcto:avg:TappRating3:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating3]' derivation='Avg' name='[pcto:avg:TappRating3:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating4]' derivation='Avg' name='[pcto:avg:TappRating4:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating4]' derivation='Avg' name='[pcto:avg:TappRating4:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating5]' derivation='Avg' name='[pcto:avg:TappRating5:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating5]' derivation='Avg' name='[pcto:avg:TappRating5:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating1]' derivation='Sum' name='[pcto:sum:TappRating1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[TappRating1]' derivation='Sum' name='[sum:TappRating1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating2]' derivation='Sum' name='[sum:TappRating2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating3]' derivation='Sum' name='[sum:TappRating3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating4]' derivation='Sum' name='[sum:TappRating4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TappRating5]' derivation='Sum' name='[sum:TappRating5:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Gapp Average Rating,Gapp Down Count,Gapp Name)' hidden='true' name='[Action (Gapp Average Rating,Gapp Down Count,Gapp Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:GappAverageRating:ok]' />
+          <groupfilter function='level-members' level='[none:GappDownCount:ok]' />
+          <groupfilter function='level-members' level='[GappName]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Gapp Name,Tapp Down Count,Taverage Rating)' hidden='true' name='[Action (Gapp Name,Tapp Down Count,Taverage Rating)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[GappName]' />
+          <groupfilter function='level-members' level='[none:TappDownCount:ok]' />
+          <groupfilter function='level-members' level='[none:TaverageRating:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Tcategory Name)' hidden='true' name='[Action (Tcategory Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[TcategoryName]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5573' measure-ordering='alphabetic' measure-percentage='0.4427' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:GappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[cnt:GappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk:6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk:7]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:GappRating5:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk:2]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk:3]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk:4]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk:5]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk:6]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk:7]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating5:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:GappRating4:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk:2]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk:3]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk:4]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk:5]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk:6]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk:7]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating4:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:TappRating4:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating4:qk:2]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating4:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[sum:TappRating4:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:TappRating2:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating2:qk:2]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating2:qk:3]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating2:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[sum:TappRating2:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:TappRating5:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating5:qk:2]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating5:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[sum:TappRating5:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:GappRating3:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk:2]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk:3]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk:4]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk:5]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk:6]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk:7]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating3:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:TappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating1:qk:2]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating1:qk:3]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[sum:TappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:GappRating2:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[cnt:GappRating2:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk:3]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk:4]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk:5]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk:6]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk:7]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:GappRating2:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[avg:TappRating3:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating3:qk:2]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:avg:TappRating3:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[pcto:sum:TappRating1:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0keuo3w12lqb8n1418c7x0teucec].[sum:TappRating3:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='ratingDifference' type='sheet' worksheet='GRatingDifference' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='ratingDifference' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='ratingDifference' type='sheet' worksheet='TRatingDifference' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='ratingDifference' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='GRatingDifference'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='join' name='federated.0keuo3w12lqb8n1418c7x0teucec' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0keuo3w12lqb8n1418c7x0teucec'>
+            <column caption='Gapp Average Rating' datatype='real' name='[GappAverageRating]' role='measure' type='quantitative' />
+            <column caption='Gapp Down Count' datatype='integer' name='[GappDownCount]' role='measure' type='quantitative' />
+            <column caption='Gapp Name' datatype='string' name='[GappName]' role='dimension' type='nominal' />
+            <column caption='Tapp Down Count' datatype='integer' name='[TappDownCount]' role='measure' type='quantitative' />
+            <column caption='Taverage Rating' datatype='real' name='[TaverageRating]' role='measure' type='quantitative' />
+            <column-instance column='[GappAverageRating]' derivation='None' name='[none:GappAverageRating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GappDownCount]' derivation='None' name='[none:GappDownCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GappName]' derivation='None' name='[none:GappName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TappDownCount]' derivation='None' name='[none:TappDownCount:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TaverageRating]' derivation='None' name='[none:TaverageRating:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0keuo3w12lqb8n1418c7x0teucec].[Action (Gapp Name,Tapp Down Count,Taverage Rating)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[GappName]' />
+              <groupfilter function='level-members' level='[none:TappDownCount:ok]' />
+              <groupfilter function='level-members' level='[none:TaverageRating:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0keuo3w12lqb8n1418c7x0teucec].[Action (Gapp Name,Tapp Down Count,Taverage Rating)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappAverageRating:qk]</rows>
+        <cols>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappDownCount:qk]</cols>
+        <show-full-range>
+          <column>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappRating1 (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{734DF79E-F841-4C2F-820C-EA29139C150F}' />
+    </worksheet>
+    <worksheet name='GcategoryRating'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='join' name='federated.0keuo3w12lqb8n1418c7x0teucec' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0keuo3w12lqb8n1418c7x0teucec'>
+            <column caption='Gcategory Name' datatype='string' name='[GcategoryName]' role='dimension' type='nominal' />
+            <column caption='Tcategory Name' datatype='string' name='[TcategoryName]' role='dimension' type='nominal' />
+            <column-instance column='[GcategoryName]' derivation='None' name='[none:GcategoryName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TcategoryName]' derivation='None' name='[none:TcategoryName:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TcategoryName:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:TcategoryName:nk]' />
+              <groupfilter function='member' level='[none:TcategoryName:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TcategoryName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TcategoryName:nk]</rows>
+        <cols>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GcategoryName:nk]</cols>
+      </table>
+      <simple-id uuid='{342B7631-75A8-4A55-959A-D19E7CBDD92F}' />
+    </worksheet>
+    <worksheet name='TRatingDifference'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='join' name='federated.0keuo3w12lqb8n1418c7x0teucec' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0keuo3w12lqb8n1418c7x0teucec'>
+            <column caption='Gapp Average Rating' datatype='real' name='[GappAverageRating]' role='measure' type='quantitative' />
+            <column caption='Gapp Down Count' datatype='integer' name='[GappDownCount]' role='measure' type='quantitative' />
+            <column caption='Gapp Name' datatype='string' name='[GappName]' role='dimension' type='nominal' />
+            <column caption='Tapp Down Count' datatype='integer' name='[TappDownCount]' role='measure' type='quantitative' />
+            <column caption='Taverage Rating' datatype='real' name='[TaverageRating]' role='measure' type='quantitative' />
+            <column-instance column='[GappAverageRating]' derivation='None' name='[none:GappAverageRating:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GappDownCount]' derivation='None' name='[none:GappDownCount:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GappName]' derivation='None' name='[none:GappName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TappDownCount]' derivation='None' name='[none:TappDownCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TaverageRating]' derivation='None' name='[none:TaverageRating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0keuo3w12lqb8n1418c7x0teucec].[Action (Gapp Average Rating,Gapp Down Count,Gapp Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:GappAverageRating:ok]' />
+              <groupfilter function='level-members' level='[none:GappDownCount:ok]' />
+              <groupfilter function='level-members' level='[GappName]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0keuo3w12lqb8n1418c7x0teucec].[Action (Gapp Average Rating,Gapp Down Count,Gapp Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TaverageRating:qk]</rows>
+        <cols>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TappDownCount:qk]</cols>
+      </table>
+      <simple-id uuid='{2167B080-0235-41E8-86EF-87774F4E5F55}' />
+    </worksheet>
+    <worksheet name='app review difference'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='join' name='federated.0keuo3w12lqb8n1418c7x0teucec' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0keuo3w12lqb8n1418c7x0teucec'>
+            <column caption='Gapp Average Rating' datatype='real' name='[GappAverageRating]' role='measure' type='quantitative' />
+            <column caption='Tapp Average Rating' datatype='real' name='[TappAverageRating]' role='measure' type='quantitative' />
+            <column caption='Tapp Name' datatype='string' name='[TappName]' role='dimension' type='nominal' />
+            <column-instance column='[GappAverageRating]' derivation='None' name='[none:GappAverageRating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TappAverageRating]' derivation='None' name='[none:TappAverageRating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TappName]' derivation='None' name='[none:TappName:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TappName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappAverageRating:qk]</rows>
+        <cols>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TappAverageRating:qk]</cols>
+      </table>
+      <simple-id uuid='{CAA39A59-311D-4343-BF06-0AAAB21786D2}' />
+    </worksheet>
+    <worksheet name='file size comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='join' name='federated.0keuo3w12lqb8n1418c7x0teucec' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0keuo3w12lqb8n1418c7x0teucec'>
+            <column caption='Gapp Name' datatype='string' name='[GappName]' role='dimension' type='nominal' />
+            <column caption='Gfile Size' datatype='integer' name='[GfileSize]' role='measure' type='quantitative' />
+            <column caption='Tapp Name' datatype='string' name='[TappName]' role='dimension' type='nominal' />
+            <column caption='Tfile Size' datatype='integer' name='[TfileSize]' role='measure' type='quantitative' />
+            <column-instance column='[GappName]' derivation='None' name='[none:GappName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GfileSize]' derivation='None' name='[none:GfileSize:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TappName]' derivation='None' name='[none:TappName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TfileSize]' derivation='None' name='[none:TfileSize:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GfileSize:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>105000000</max>
+          </filter>
+          <slices>
+            <column>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GfileSize:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GappName:nk]' />
+              <text column='[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TappName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:GfileSize:qk]</rows>
+        <cols>[federated.0keuo3w12lqb8n1418c7x0teucec].[none:TfileSize:qk]</cols>
+      </table>
+      <simple-id uuid='{624D52CE-6A49-4CA7-A003-B8B355633E4C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='ratingDifference'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='1' name='GRatingDifference' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='3' name='TRatingDifference' w='98400' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{2624CC45-4BC4-4265-A6CF-28259919293E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='file size comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A43D70D-80AC-40CF-8582-0DF41BFB3CCE}' />
+    </window>
+    <window class='worksheet' name='GRatingDifference'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD4E9730-878C-4E84-9384-B395EBB11F70}' />
+    </window>
+    <window class='worksheet' name='TRatingDifference'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D015B882-221B-4552-AB89-95AF6041DF4E}' />
+    </window>
+    <window class='dashboard' name='ratingDifference'>
+      <viewpoints>
+        <viewpoint name='GRatingDifference'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='TRatingDifference'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8A86AC04-0AB3-4278-A303-FC6EAD49F2DF}' />
+    </window>
+    <window class='worksheet' name='GcategoryRating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FE742D24-2CFD-40CE-AD9F-410732A911B5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='app review difference'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C18DE31-8C4C-4114-AA25-01CC963B05A2}' />
+    </window>
+  </windows>
+</workbook>
